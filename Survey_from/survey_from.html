@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Student Survey</title>
+    <link rel="stylesheet"href="surveystyle.css">
+
+</head>
+<body>
+    <form>
+        <h2> Student Language Survey</h2>
+        <p>Required  Fileds are followed by *</p>
+        
+        <p> Name:*<input type="text" name="name"required></p>
+        <p>Email:*<input type="Email"name="Email"required></p>
+        
+
+        
+         
+            <fieldset class="checkbox-group">
+                <legend>Which programming languages do you know? *</legend>
+                <label><input type="checkbox" name="languages" value="c"required> c</label>
+                <label><input type="checkbox" name="languages" value="C++"> C++</label>
+                <label><input type="checkbox" name="languages" value="Java"> Java</label>
+                <label><input type="checkbox" name="languages" value="Python"> Python</label>
+                <label><input type="checkbox" name="languages" value="JavaScript"> JavaScript</label>
+            </fieldset>
+            
+          
+        
+        <label for="favorite">Favorite language (if any):*</label>
+        <input type="text" id="favorite" name="favorite"required>
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+        
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
