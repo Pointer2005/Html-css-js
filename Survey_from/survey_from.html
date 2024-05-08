@@ -17,20 +17,21 @@
         
 
         
-         
-            <fieldset class="checkbox-group">
+        
+            <fieldset class="select-group" aria-required="false">
                 <legend>Which programming languages do you know? *</legend>
-                <label><input type="checkbox" name="languages" value="c"required> c</label>
-                <label><input type="checkbox" name="languages" value="C++"> C++</label>
-                <label><input type="checkbox" name="languages" value="Java"> Java</label>
-                <label><input type="checkbox" name="languages" value="Python"> Python</label>
-                <label><input type="checkbox" name="languages" value="JavaScript"> JavaScript</label>
+                <select name="language" id="Language" required>
+                    <option value="" unselected>select</option>
+                    <option value="C"><label>C</label></option>
+                    <option value="C++"><label>C++</label></option>
+                    <option value="Python"><label>Python</label></option>
+                    <option value="JavaScript"><label>JavaScript</label></option>
+                </select>
             </fieldset>
-            
           
         
         <label for="favorite">Favorite language (if any):*</label>
-        <input type="text" id="favorite" name="favorite"required>
+        <input type="text" id="favorite" name="favorite" required>
         
         <label for="comments">Additional Comments:</label>
         <textarea id="comments" name="comments"></textarea>
